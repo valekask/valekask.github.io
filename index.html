@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Geo</title>
+    <title>FNA Geo map tool</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.12/proj4.js"></script>
     <script src="https://code.highcharts.com/maps/highmaps.js"></script>
     <script src="https://code.highcharts.com/maps/modules/data.js"></script>
@@ -66,7 +66,7 @@
         <div class="tab-content">
           <div class="tab-pane fade show active" role="tabpanel" id="nav-start">
             <div>
-              This tool allows to build custom maps for FNA Platform:
+              <b>This tool allows to build custom maps for FNA Platform:</b>
               <ol>
                 <li>Preview map</li>
                 <li>Show lat/lon coordinates on map</li>
@@ -74,6 +74,19 @@
                   Convert lat/lon coordinates to points to use on FNA Platform
                 </li>
                 <li>Export map, points and script</li>
+              </ol>
+
+              <b>Get started:</b>
+              <ol>
+                <li>Select a Map in the list at the top</li>
+                <li>Put lat/lon location on "Locations" tab, see <a href="https://github.com/valekask/valekask.github.io/tree/main/maps/examples">examples</a></li>
+                <li>Click "Show Points" button to add points to the map</li>
+                <li>
+                  Open "Points" tab to see locations converted to the FNA data
+                  format
+                </li>
+                <li>Open "Script" tab to see FNA script template</li>
+                <li>Download data on "Finish" tab</li>
               </ol>
             </div>
           </div>
@@ -95,7 +108,7 @@
           </div>
 
           <div class="tab-pane" role="tabpanel" id="nav-finish">
-            <h2>What's next?</h2>
+            <b>What's next?</b>
             <ol>
               <li>
                 <b>Download map file</b><br />

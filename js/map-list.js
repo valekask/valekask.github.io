@@ -13,9 +13,9 @@ function MapList() {
       mapKey: "custom/world-continents",
     },
     {
-      value: "world-palestine-highres",
+      value: "world",
       name: "World Countries",
-      mapKey: "custom/world-palestine-highres",
+      mapKey: "custom/world",
     },
     { value: "europe", name: "Europe", mapKey: "custom/europe" },
     {
