@@ -125,5 +125,4 @@ function showMap(mapKey, size) {
   });
 
   chart.originalSize = size;
-  // console.log(chart);
 }

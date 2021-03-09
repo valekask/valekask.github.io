@@ -47,18 +47,18 @@
               role="tab"
               >Locations</a
             >
-            <a class="nav-link" data-toggle="tab" href="#nav-result" role="tab"
-              >Data</a
+            <a class="nav-link" data-toggle="tab" href="#nav-points" role="tab"
+              >Points</a
             >
             <a class="nav-link" data-toggle="tab" href="#nav-script" role="tab"
               >Script</a
             >
             <a class="nav-link" data-toggle="tab" href="#nav-finish" role="tab"
-            >Finish</a
+              >Finish</a
             >
 
-            <button type="button" class="btn btn-primary" id="show-locations">
-              Show Locations
+            <button type="button" class="btn btn-primary" id="show-points">
+              Show Points
             </button>
           </div>
         </nav>
@@ -66,8 +66,15 @@
         <div class="tab-content">
           <div class="tab-pane fade show active" role="tabpanel" id="nav-start">
             <div>
-              This tool allows to preview map, show points by lat/lon
-              coordinates, and export data and script to use it on FNA Platform.
+              This tool allows to build custom maps for FNA Platform:
+              <ol>
+                <li>Preview map</li>
+                <li>Show lat/lon coordinates on map</li>
+                <li>
+                  Convert lat/lon coordinates to points to use on FNA Platform
+                </li>
+                <li>Export map, points and script</li>
+              </ol>
             </div>
           </div>
 
@@ -75,8 +82,12 @@
             <textarea id="locations-textarea"></textarea>
           </div>
 
-          <div class="tab-pane" role="tabpanel" id="nav-result">
-            <textarea id="result-textarea" placeholder="Output data will be here..." readonly></textarea>
+          <div class="tab-pane" role="tabpanel" id="nav-points">
+            <textarea
+              id="points-textarea"
+              placeholder="Points will be here after clicking on 'Show points' button..."
+              readonly
+            ></textarea>
           </div>
 
           <div class="tab-pane" role="tabpanel" id="nav-script">
@@ -86,28 +97,31 @@
           <div class="tab-pane" role="tabpanel" id="nav-finish">
             <h2>What's next?</h2>
             <ol>
-              <li><b>Download map file</b><br/>
-              <button type="button" class="btn btn-info" id="download-map">
-                Download Map (.csv)
-              </button>
+              <li>
+                <b>Download map file</b><br />
+                <button type="button" class="btn btn-info" id="map-download">
+                  Download map (.csv)
+                </button>
               </li>
-              <li><b>Download data file</b><br/>
-              <button type="button" class="btn btn-info" id="download-data">
-                Download Data (.csv)
-              </button>
+              <li>
+                <b>Download points file</b><br />
+                <button type="button" class="btn btn-info" id="points-download">
+                  Download points (.csv)
+                </button>
               </li>
-              <li><b>Download FNA Script</b><br/>
-              <button type="button" class="btn btn-info" id="download-script">
-                Download Script
-              </button>
+              <li>
+                <b>Download FNA Script</b><br />
+                <button type="button" class="btn btn-info" id="script-download">
+                  Download script
+                </button>
               </li>
-              <li><b>Create dashboard</b>
-              <ul>
-                <li>Upload all data and script files to editor</li>
-                <li>Update script according to your needs</li>
-                <li>Run script</li>
-                <li>Open dashboard to see result</li>
-              </ul>
+              <li>
+                <b>Create FNA Dashboard</b>
+                <ul>
+                  <li>Upload map, points and script files to FNA Editor</li>
+                  <li>Run script</li>
+                  <li>Open dashboard to see result</li>
+                </ul>
               </li>
             </ol>
           </div>
@@ -134,6 +148,7 @@
     <script src="js/map-download.js"></script>
     <script src="js/map.utils.js"></script>
     <script src="js/script-example.js"></script>
+    <script src="js/data-download.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

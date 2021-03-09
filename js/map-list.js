@@ -4,6 +4,7 @@ function MapList() {
   };
   const svgUtils = new SvgUtils();
   const select$ = document.getElementById("maps-list");
+  const listeners = [];
 
   const list = [
     {
@@ -97,9 +98,17 @@ function MapList() {
           showMap(mapKey, size);
         });
       });
+
+      listeners.forEach((cb) => {
+        cb.apply();
+      });
     });
 
-    select$.dispatchEvent(new Event('change'));
+    select$.dispatchEvent(new Event("change"));
+  };
+
+  module.addChangeListener = function (callback) {
+    listeners.push(callback);
   };
 
   function getScript(url, cb) {
