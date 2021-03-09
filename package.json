@@ -1,0 +1,17 @@
+{
+  "name": "fna-geo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "http-server": "^0.12.3",
+    "local-web-server": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
